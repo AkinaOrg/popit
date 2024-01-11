@@ -1,0 +1,5 @@
+import re
+text = "Sample text with email addresses user1@gmail.com and user2@example.com."
+pattern = r"\b[A-Za-z0-9._%+-]+@gmail\.com\b"
+matches = re.findall(pattern, text)
+print(matches)
